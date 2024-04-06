@@ -3,9 +3,6 @@ pipeline {
     
     stages {
         stage('valdiate') {
-            when {
-                branch "feature/karo"
-            }
             steps {
                 echo 'mvn clean package'
             }
